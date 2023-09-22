@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="revealjs/dist/reset.css">
+    <link rel="stylesheet" href="revealjs/dist/reveal.css">
+    <link rel="stylesheet" href="revealjs/dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="revealjs/plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .screenshot{
+            width: 80%;
+            margin-bottom: 0 !important;
+        }
+
+        .caption{
+            margin-top: 0 !important;
+            font-size: large;
+        }
+
+        .button{
+            background-color: #1a73e8;
+            padding: 5px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-size: 60%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+
+                <section class="blur-5px shadow-4px" data-background-image="images/earth-2254769_1280.jpg"><h1 class="r-fit-text">Register for Google Earth Engine (GEE)</h1></section>
+                <section data-transition="fade"><img class="screenshot" data-src="images/register-gee/01.png"><p class="caption">Go to <a href="https://code.earthengine.google.com">code.earthengine.google.com</a> and login either using an existing google account or creating a new one for your academic use. If you have multiple google accounts, we recommend you use the <a href="https://www.howtogeek.com/269265/how-to-enable-private-browsing-on-any-web-browser/">incogniote mode</a> of your browser.</p></section>
+                <section data-transition="fade"><img class="screenshot" data-src="images/register-gee/03.png"><p class="caption">Select <strong>Unpaid usage</strong> and the Project type <strong>Academia & Research</strong> and click <span class="button">next</span></p></section>
+                <section data-transition="fade"><img class="screenshot" data-src="images/register-gee/04.png"><p class="caption">Select <strong>Create a new Google Cloud Project</strong>. You can keep the default values in <strong>Organization</strong>, <strong>Project-ID</strong> and <strong>Project Name</strong> and click on <span class="button">Next</span>. If you are prompted to that you haven't accepted the Terms and Conditions, click on the link provided, read the Terms and Conditions, and accept these.</p></section>
+                <section data-transition="fade"><img class="screenshot" data-src="images/register-gee/05.png"><p class="caption">Click on <span class="button">Open in Code Editor</span> </p></section>
+                <section data-transition="fade"><img class="screenshot" data-src="images/register-gee/06.png"><p class="caption">If you see this page and can interact with the map (zoom in, zoom out), you are set!</section>
+            </section>
+        </div>
+    </div>
+
+    <script src="revealjs/dist/reveal.js"></script>
+    <script src="revealjs/plugin/notes/notes.js"></script>
+    <script src="revealjs/plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>
