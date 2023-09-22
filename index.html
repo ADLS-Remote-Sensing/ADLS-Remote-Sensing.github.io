@@ -1,73 +1,101 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>Remote Sensing: Geospatial Analysis in the cloud</title>
+	<title>reveal.js</title>
 
 	<link rel="stylesheet" href="revealjs/dist/reset.css">
 	<link rel="stylesheet" href="revealjs/dist/reveal.css">
 	<link rel="stylesheet" href="revealjs/dist/theme/black.css">
 
-	<script src="https://kit.fontawesome.com/53bd508d27.js" crossorigin="anonymous"></script>
-
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="revealjs/plugin/highlight/monokai.css">
-
-	<style>
-		.streaming {
-			--fa-border-padding: 20px;
-			--fa-border-color: none
-		}
-
-		kbd {
-			-moz-border-radius: 3px;
-			-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
-			-webkit-border-radius: 3px;
-			-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
-			background-color: #f7f7f7;
-			border: 1px solid #ccc;
-			border-radius: 3px;
-			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
-			color: #333;
-			display: inline-block;
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 40%;
-			line-height: 1.4;
-			margin: 0 .1em;
-			padding: .1em .6em;
-			text-shadow: 0 1px 0 #fff;
-		}
-
-		code{
-			font-size:smaller;
-			background-color:#ccc;
-			padding: 4px;
-			border-radius: 2px;
-		}
-	</style>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section data-background-image="images/cloud.jpeg">
+			<section>
+				<section data-background-image="images/cloud.jpeg">
+					<p style="text-shadow: 2px 2px #1c1b1b;">Introduction to</p>
+					<h1 class="r-fit-text" style="text-shadow: 2px 2px #1c1b1b;">Geospatial Analysis in the Cloud</h1>
+				</section>
+				<section>
+					<div class="r-hstack">
+						<div style="width: 40%; row-gap: 5px;">
+							<img data-src="images/rata.jpeg" style="border-radius: 100%; width: 50%;">
+						</div>
+						<div style="width: 50%;" class="large">
+							<div style="text-align: left;">
 
-				<p style="text-shadow: 2px 2px #1c1b1b;">Introduction to</p>
+								<h4>Nils Ratnaweera</h4>
 
-				<h1 class="r-fit-text" style="text-shadow: 2px 2px #1c1b1b;">Geospatial Analysis in the Cloud</h1>
+								<ul class="no-bullets">
+									<li>ZHAW School of Life Sciences and Facility Management</li>
+									<li>Institute of Natural Resource Sciences</li>
+									<li>Grüentalstrasse 14</li>
+									<li>8820 Wädenswil</li>
+								</ul>
+								<br><br>
+								<ul class="no-bullets">
+									<li>+41 (0) 58 934 55 63</li>
+									<li>nils.ratnaweera@zhaw.ch</li>
+								</ul>
+								<br><br>
+								<h4>Position at the ZHAW</h4>
+								<ul class="no-bullets">
+									<li>Research Associate at the Research Group for Geoinformatics </li>
+									<li><a
+											href="http://www.zhaw.ch/iunr/geoinformatik">www.zhaw.ch/iunr/geoinformatik</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="large" style="text-align: left;">
+
+
+
+
+						<br><br>
+						<!-- <h4>Educational background</h4>
+
+						<ul class="no-bullets">
+							<li>Bc.S. in Natural Resource Sciences (2013) at Zurich University of Applied Sciences</li>
+							<li>Mc.S. Life Sciences Specialisation in Natural Resource Sciences (2017) at Zurich
+								University of Applied Sciences</li>
+						</ul>
+						<br><br>
+						<h4>Professional milestones</h4>
+
+						<ul class="no-bullets">
+							<li>2016 - 2019 Research Assistant at the Research Group for Geoinformatics at Zurich
+								University of Applied Sciences</li>
+							<li>2013 Field Assistant in the Roe Deer Projekt of the University of Zurich</li>
+							<li>2010 Group Leader at Bergwaldprojekt</li>
+							<li>2009 Intern at the Centro Ecologico Akumal</li>
+							<li>2008 - 2009 Intern at the Great Basin Institute</li>
+						</ul> -->
+					</div>
+				</section>
 			</section>
 			<section>
-				<section>
+				<section class="blur-5px shadow-4px" data-background-image="images/small-fire-butterfly-8224901_1280.jpg">
 					<h2>Why in the Cloud?</h2>
 				</section>
 				<section>
 					Data Explosion <br>
 
-					<img data-src="images/Datenvolumen_D-SDA.jpg" alt="">
+					<img style="margin-bottom: 0;" data-src="images/Datenvolumen_D-SDA.jpg" alt="">
+					<p style="margin-top: 0;" class="large">Source: <a href="https://www.dlr.de/eoc/en/desktopdefault.aspx/tabid-12632/22039_read-51751">dlr.de</a></p>
 					<aside class="notes">
 						<ul>
 							<li>We in the middle of an explosion of Earth Observation data</li>
@@ -76,33 +104,32 @@
 						</ul>
 					</aside>
 				</section>
-				<section>
 
-
-					<div class="r-hstack streaming fragmet">
-						<i class="fa-solid fa-code fa-2x fa-border"></i>
-						<i class="fa-solid fa-arrow-left fa-1x fa-border"></i>
-						<i class="fa-solid fa-database fa-2x fa-border"></i>
-					</div>
-					<br>
-
+				<section data-auto-animate>
 					Paradigm Shift <br> <br>
-
-					<div class="r-hstack streaming fragment">
-						<i class="fa-solid fa-code fa-2x fa-border"></i>
-						<i class="fa-solid fa-arrow-right fa-1x fa-border"></i>
-						<i class="fa-solid fa-database fa-2x fa-border"></i>
+					<div class="r-hstack streaming">
+						<i data-id = "code" class="fa-solid fa-code fa-2x fa-border"></i>
+						<div class="r-vstack">
+							<i data-id = "arrow" class="fa-solid fa-arrow-left fa-1x fa-border"></i>
+							<!-- <i data-id = "arrow" class="fa-solid fa-arrow-right fa-1x fa-border"></i> -->
+						</div>
+						<i data-id = "data" class="fa-solid fa-database fa-2x fa-border"></i>
 					</div>
-					<aside class="notes">
-						Local storage vs. Streaming.
-						This is similar to the spotify streaming music vs. mp3 paradigm shift.
-					</aside>
-
-
-
+				</section>
+				<section data-auto-animate>
+					Paradigm Shift <br> <br>
+					<div class="r-hstack streaming">
+						<i data-id = "code" class="fa-solid fa-code fa-2x fa-border"></i>
+						<div class="r-vstack">
+							<i data-id = "arrow" class="fa-solid fa-arrow-left fa-1x fa-border" style="color: rgba(128, 128, 128, 0.289)"></i>
+							<i data-id = "arrow" class="fa-solid fa-arrow-right fa-1x fa-border" style="color: red"></i>
+						</div>
+						<i data-id = "data" class="fa-solid fa-database fa-2x fa-border"></i>
+					</div>
 				</section>
 
-
+				
+			
 				<section>
 					Which EO Platform?<br> <br>
 
@@ -116,7 +143,7 @@
 						<li class="fragment">JEODPP</li>
 						<li class="fragment">pipsCloud</li>
 						<li class="fragment">...</li>
-						<li class="fragment highlight-red">openEO</li>
+						<li class="fragment"><span class="fragment highlight-current-red">openEO</span></li>
 
 					</ul>
 
@@ -129,15 +156,15 @@
 
 				<section>
 					<img src="images/openeo_logo.png" alt="" srcset=""><br>
-					
+
 					<p style="font-size: x-large;">
 						openEO develops an open API to connect R, Python, <br>
 						JavaScript and other clients to big Earth observation<br>
-						cloud back-ends in a simple and unified way. 
+						cloud back-ends in a simple and unified way.
 					</p>
 
 					<aside class="notes">
-					OpenEO:
+						OpenEO:
 						<ul>
 							<li>is an open source project</li>
 							<li>provides a standardized API (is a wrapper around existing plattforms)</li>
@@ -149,7 +176,6 @@
 					</aside>
 
 				</section>
-
 				<section>
 					<img data-src="images/tweet.png" alt="">
 				</section>
@@ -169,13 +195,12 @@
 				</section>
 
 			</section>
-
 			<section>
-				<section>
+				<section class="blur-5px shadow-4px" data-background-image="images/earth-2254769_1280.jpg">
 					<h2 class="r-fit-text">Google Earth Engine</h2>
 
 				</section>
-			
+
 				<section data-background-color="gray">
 					<img data-src="images/gee.png" alt="">
 
@@ -204,28 +229,32 @@
 				</section>
 
 			</section>
-
-
-
 			<section>
-				<section>
-					<small>(a <em>very</em> brief)</small>
+				<section class="blur-5px shadow-4px" data-background-image="images/child-2887483_1280.jpg">
+					<small style="text-shadow: 2px 2px #090909;">(a <em>very</em> brief)</small>
 					<h2> Introduction to Javascript</h2>
 
-					<small class="fragment">Todays evaluation metric: # of javascript code</small>
 				</section>
 
 				<section>
 					<ol>
 						<li class="fragment">Open a browser window</li>
 						<li class="fragment">Press <kbd>F12</kbd> to open the developer tools </li>
-							<!--or <kbd>Ctr</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (<kbd>Command</kbd>+<kbd>option</kbd>+<kbd>I</kbd> on a Mac)-->
+						<!--or <kbd>Ctr</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (<kbd>Command</kbd>+<kbd>option</kbd>+<kbd>I</kbd> on a Mac)-->
 						<li class="fragment">Go to the <code>console</code> tab</li>
 						<li class="fragment">Follow along! (Demo time)</li>
 					</ol>
+
+
+					<aside class="notes">
+						<ul>
+							<li>Walk through the code in <code>01-browser-console-demo.md</code></li>
+						</ul>
+					</aside>
+
 				</section>
 
-				
+
 
 				<section>
 					<h3>Recap</h3>
@@ -234,247 +263,247 @@
 				<section>
 					Variable declaration
 					<pre><code data-trim class="js" data-line-numbers="1-3|5-6">
-							// Variables are used to store objects, and are defined 
-							// using the keyword var.
-							var the_answer = 42;
-
-							// String objects start and end with double quotes.
-							var my_variable = "I am a string";
-						</code></pre>
+								// Variables are used to store objects, and are defined 
+								// using the keyword var.
+								var the_answer = 42;
+	
+								// String objects start and end with double quotes.
+								var my_variable = "I am a string";
+							</code></pre>
 
 					<pre class="fragment"><code data-trim class="js" data-line-numbers="1|2-3|4">
-							// there are other ways to delare variables in js
-							let the_answer = 42;
-							const the_answer = 42;
-							// we will ignore these
-						</code></pre>
+								// there are other ways to delare variables in js
+								let the_answer = 42;
+								const the_answer = 42;
+								// we will ignore these
+							</code></pre>
 				</section>
 				<section>
 					Statements
 					<pre><code data-trim class="js" data-line-numbers="1-2|4">
-							// Statements *should* end in a semi-colon
-							var test = 'I feel incomplete...'
-
-							var test = 'I feel complete...';
-							
-							</code></pre>
+								// Statements *should* end in a semi-colon
+								var test = 'I feel incomplete...'
+	
+								var test = 'I feel complete...';
+								
+								</code></pre>
 
 
 
 				</section>
-		
+
 
 				<section>
 					<ol>
-						<li class="fragment">Open a plain text editor <span class="fragment">(e.g. <span
-									class="highlight">Notepad</span> on Windows, <span class="highlight">TextEdit</span>
-								or <span class="highlight">RStudio</span> )</span></li>
+						<li class="fragment">Open a <span class="fragment highlight-red">plain text editor</span> </li>
 						<li class="fragment">Create a file with the extension <code>.html</code> </li>
 						<li class="fragment">Create a <code>script</code> tag</li>
-						<pre class="fragment"><code data-trim class="" data-line-numbers="">
-								<script>
+						<pre class="fragment"><code data-trim class="html" data-line-numbers="">
+									<script>
 
-								</script>
-							</code></pre>
+									</script>
+								</code></pre>
 						<li class="fragment">Open this file in the browser</li>
 						<li class="fragment">Follow along! (Demo time)</li>
 					</ol>
+
+					<aside class="notes">
+						<ul>
+							<li>walk through the script <code>02-basic-html-script-demo.md</code></li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
-					Task:
+					<p>Task:</p>
 
-					<ol>
+					<ol class="xx-large">
 						<li class="fragment">Create a variable <code>myname</code> with your name</li>
 						<li class="fragment">Create a variable <code>myage</code> with your age</li>
 						<li class="fragment">Calculate your age in days and store it in <code>myage_days</code></li>
-						<li class="fragment">Print to the console: <code>Hi, my name is ... and I am ... days old</code></li>
+						<li class="fragment">Print to the console: <code>Hi, my name is ... and I am ... days old</code>
+						</li>
 					</ol>
+
+					<aside class="notes">
+						<ul>
+							<li>solution is in <code>03-basic-html-script-task.md</code></li>
+						</ul>
+					</aside>
 
 				</section>
 
 				<section>
 					Demo continues...
+
+					<aside class="notes">
+						<ul>
+							<li>Walk through the script <code>04-basic-html-script-demo.md</code></li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
-					Task:
+					<p>Task:</p>
 
-					<ul>
+					<ul class="xx-large">
 						<li>Create a function that converts a number of years to a number of days</li>
 						<li>Name the function <code>years2days</code></li>
 					</ul>
-					<pre><code data-trim class="" data-line-numbers="">
-						// this is the syntax for creating a function:
-						function say_something(what){
-							console.log(what)
-						};
-					</code></pre>
+					<pre><code data-trim class="js" data-line-numbers="">
+							// this is the syntax for creating a function:
+							function say_something(what){
+								// do something
+							};
+						</code></pre>
+
+					<aside class="notes">
+						<ul>
+							<li>solution is in <code>05-function-years2days-task.md</code></li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
 					Demo continues...
+
+					<aside class="notes">
+						<ul>
+							<li>solution is in <code>06-introduction-to-methods-demo.md</code></li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
 					<h3>Recap</h3>
 				</section>
-				
+
 
 				<section>
 
 					Comments
 					<pre><code data-trim class="js" data-line-numbers="1-2|4-8">
-								// Line comments start with two forward slashes. 
-								// Like this line.
-
-								/* 
-								Multi line comments start with a forward slash 
-								and a star,
-								and end with a star and a forward slash. 
-								*/
-							</code></pre>
+									// Line comments start with two forward slashes. 
+									// Like this line.
+	
+									/* 
+									Multi line comments start with a forward slash 
+									and a star,
+									and end with a star and a forward slash. 
+									*/
+								</code></pre>
 				</section>
-				
+
 				<section data-visibility="hidden">
 					Functions
 					<pre><code data-trim class="js">
-								// Parentheses are used to pass parameters to functions.
-								// the function below is console.log
-								console.log("this is the parameter");
-							</code></pre>
+									// Parentheses are used to pass parameters to functions.
+									// the function below is console.log
+									console.log("this is the parameter");
+								</code></pre>
 				</section>
 				<section>
 
 					Arrays
 					<pre><code data-trim class="js" data-line-numbers="1-2|4-6">
-								// Square brackets are used to create a list of items
-								var my_list = ['eggplant', 'apple', 'wheat'];
-
-								// Square brackets are also used for selecting items within 
-								// a list. 0 refers to the first item in the list.
-								my_list[0];
-
-								
-							</code></pre>
+									// Square brackets are used to create a list of items
+									var my_list = ['eggplant', 'apple', 'wheat'];
+	
+									// Square brackets are also used for selecting items within 
+									// a list. 0 refers to the first item in the list.
+									my_list[0];
+	
+									
+								</code></pre>
 				</section>
 				<section>
 					Dictionaries
 					<pre><code data-trim class="js" data-line-numbers="1-2|4-5|7-8">
-								// Curly brackets are used to define "dictionaries"
-								var my_dict = {'food':'bread', 'color':'red', 'number':42};
-
-								// Square brackets are used to access items (by key).
-								my_dict['color'];
-
-								// Or you can use the dot notation to get the same result.
-								my_dict.color;
+									// Curly brackets are used to define "dictionaries"
+									var my_dict = {'food':'bread', 'color':'red', 'number':42};
+	
+									// Square brackets are used to access items (by key).
+									my_dict['color'];
+	
+									// Or you can use the dot notation to get the same result.
+									my_dict.color;
+								</code></pre>
+				</section>
+				<section>
+					Functions
+					<pre><code data-trim class="js" data-line-numbers="1-5|7">
+									// Functions can be defined as a way to reuse code and 
+									// make it easier to read.
+									function years2days(years){
+										return years*365
+									};
+	
+									years2days(34);
+								
 							</code></pre>
 				</section>
 				<section>
 					Functions
 					<pre><code data-trim class="js" data-line-numbers="1-5|7">
-								// Functions can be defined as a way to reuse code and 
-								// make it easier to read.
-								function years2days(years){
-									return years*365
-								};
-
-								years2days(34);
-							
-						</code></pre>
-				</section>
-				<section>
-					Functions
-					<pre><code data-trim class="js" data-line-numbers="1-5|7">
-								// Functions can be defined as a way to reuse code and 
-								// make it easier to read.
-								var say_hello = function(string) {
-									return 'Hello ' + string + '!';
-								};
-
-								say_hello('world');
-							
-						</code></pre>
+									// Functions can be defined as a way to reuse code and 
+									// make it easier to read.
+									var say_hello = function(string) {
+										return 'Hello ' + string + '!';
+									};
+	
+									say_hello('world');
+								
+							</code></pre>
 
 				</section>
 
 			</section>
 			<section>
-				<section>
+				<section class="blur-5px shadow-4px" data-background-image="images/worker-5736096_1280.jpg">
 					<h2 class="r-fit-text">Javascript in websites</h2>
 				</section>
 				<section>
 					<p class="r-fit-text">Javascript is part of a trinity that defines most of the web</p>
 
 					<img src="https://www.phon.ucl.ac.uk/courses/spsci/webprog/images/html-css-js.png" alt="">
-					
+
 				</section>
 
 				<section>
 					<p class="r-fit-text fragment">Let's take this opportunity to explore and understand this.</p>
 
 					<p class="fragment">(Demo time)</p>
+
+					<aside class="notes">
+						<ul>
+							<li>Walk through the script <code>07-years2days-website.md</code></li>
+						</ul>
+					</aside>
 				</section>
 
-				<section data-auto-animate data-visibility="hidden">
-					<pre data-id="myapp"><code data-trim class="html" data-line-numbers="">
-						<script type="text/template">
-							<!DOCTYPE html>
-							<html>
-								<body>
-								</body>
-							</html>
-						</script>
-						
-					</code></pre>
-				</section>
-				<section data-auto-animate data-visibility="hidden">
-					<pre data-id="myapp"><code data-trim class="html" data-line-numbers="">
-						<script type="text/template">
-							<!DOCTYPE html>
-							<html>
-								<body>
-									<h1>Years to Days calculator</h1>
-								</body>
-							</html>
-						</script>
-						
-					</code></pre>
-				</section>
-				<section data-auto-animate data-visibility="hidden">
-					<pre data-id="myapp"><code data-trim class="html" data-line-numbers="">
-						<script type="text/template">
-							<!DOCTYPE html>
-							<html>
-								<body>
-									<h1>Years to Days calculator</h1>
 
-									Please enter your age in years:
-									<input id="myage" type="number">
-									<button>Calculate</button>
-								</body>
-							</html>
-						</script>
-						
-					</code></pre>
-				</section>
+
+
 
 				<section>
 					Challenge: <br>
 
 					<p>Create an application that takes your name as an input and returns the name backwards.</p> <br>
 
-					<p class="fragment">Tipp: use the methods <code>split</code>, <code>reverse</code> and <code>join</code>.</p>
+					<p class="fragment">Tipp: use the methods <code>split</code>, <code>reverse</code> and
+						<code>join</code>.</p>
 
-					
+					<aside class="notes">
+						Solution is in <code>08-reverse-name-website.html</code>
+					</aside>
+
 				</section>
-			
+
 
 
 			</section>
 			<section>
-				<section>
+				<section class="blur-5px shadow-4px" data-background-image="images/turtle-2201433_1280.jpg">
 					<h2 class="r-fit-text">First steps in Google Earth Engine</h2>
 				</section>
 
@@ -486,7 +515,8 @@
 						<li class="fragment">Play around with the Code Editor (create variables, dictionaries,
 							lists...)</li>
 						<li class="fragment">Navigate to the location "Visp" using the search bar</li>
-						<li class="fragment">Look for a dataset in the search bar (e.g. <code>NASA SRTM Digital Elevation 30m</code>)</li>
+						<li class="fragment">Look for a dataset in the search bar (e.g.
+							<code>NASA SRTM Digital Elevation 30m</code>)</li>
 					</ol>
 
 				</section>
@@ -519,90 +549,14 @@
 					Demo 7 (Land use classification)
 				</section>
 
-				<section data-auto-animate data-visibility="hidden">
-					<p>Importing Data </p>
-					<p style="font-size:smaller">(hit <kbd>Ctr</kbd> + <kbd>Enter</kbd> to run the script)</p>
-					<pre data-id="import"><code data-trim class="js" data-line-numbers>
-							var srtm = ee.Image("USGS/SRTMGL1_003")
-						</code></pre>
-				</section>
-				<section data-auto-animate data-visibility="hidden">
-					<p>Importing Data </p>
-					<p style="font-size:smaller">(hit <kbd>Ctr</kbd> + <kbd>Enter</kbd> to run the script)</p>
-					<pre data-id="import"><code data-trim class="js" data-line-numbers>
-							var srtm = ee.Image("USGS/SRTMGL1_003")
 
-							console.log(srtm)
-						</code></pre>
-
-
-				</section>
-				<section data-auto-animate data-visibility="hidden">
-					<p>Importing Data </p>
-					<p style="font-size:smaller">(hit <kbd>Ctr</kbd> + <kbd>Enter</kbd> to run the script)</p>
-					<pre data-id="import"><code data-trim class="js" data-line-numbers>
-							var srtm = ee.Image("USGS/SRTMGL1_003")
-
-							console.log(srtm)
-
-							Map.addLayer(srtm);
-						</code></pre>
-				</section>
-				<section data-auto-animate data-visibility="hidden">
-					<p>Importing Data </p>
-					<p style="font-size:smaller">(hit <kbd>Ctr</kbd> + <kbd>Enter</kbd> to run the script)</p>
-					<pre data-id="import"><code data-trim class="js" data-line-numbers>
-							var srtm = ee.Image("USGS/SRTMGL1_003")
-
-							console.log(srtm)
-
-							Map.addLayer(
-								srtm
-								);
-						</code></pre>
-
-
-				</section>
-				<section data-auto-animate data-visibility="hidden">
-					<p>Importing Data </p>
-					<p style="font-size:smaller">(hit <kbd>Ctr</kbd> + <kbd>Enter</kbd> to run the script)</p>
-					<pre data-id="import"><code data-trim class="js" data-line-numbers>
-							var srtm = ee.Image("USGS/SRTMGL1_003")
-
-							console.log(srtm)
-
-							Map.addLayer(
-								srtm, 
-								{min:0, max:3000}            // min & max elevation vals
-								);
-						</code></pre>
-
-				</section>
-				<section data-auto-animate data-visibility="hidden">
-					<p>Importing Data </p>
-					<p style="font-size:smaller">(hit <kbd>Ctr</kbd> + <kbd>Enter</kbd> to run the script)</p>
-					<pre data-id="import"><code data-trim class="js" data-line-numbers>
-							var srtm = ee.Image("USGS/SRTMGL1_003")
-
-							console.log(srtm)
-
-							Map.addLayer(
-								srtm, 
-								{min:0, max:3000}            // min & max elevation vals
-								palette: "blue, yellow, red" // or your own colours
-								);
-						</code></pre>
-
-				</section>
 			</section>
-
 
 		</div>
 	</div>
 
 	<script src="revealjs/dist/reveal.js"></script>
 	<script src="revealjs/plugin/notes/notes.js"></script>
-	<script src="revealjs/plugin/markdown/markdown.js"></script>
 	<script src="revealjs/plugin/highlight/highlight.js"></script>
 	<script>
 		// More info about initialization & config:
@@ -612,7 +566,7 @@
 			hash: true,
 
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+			plugins: [RevealHighlight, RevealNotes]
 		});
 	</script>
 </body>
