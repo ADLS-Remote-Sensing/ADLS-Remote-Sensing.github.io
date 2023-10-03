@@ -1,3 +1,6 @@
 [submodule "revealjs"]
 	path = revealjs
 	url = https://github.com/hakimel/reveal.js
+[submodule "verticator"]
+	path = verticator
+	url = https://github.com/Martinomagnifico/reveal.js-verticator.git
