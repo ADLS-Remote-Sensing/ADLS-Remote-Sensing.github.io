@@ -23,12 +23,16 @@ kbd {
 }
 
 code{
-    font-size:calc(50%);;
+    font-size:calc(80%);;
     background-color:#3e3d3d;
     padding: 4px;
     border-radius: 2px;
     display: inline-block;
     vertical-align:middle;
+}
+
+.highlight{
+    color: orange;
 }
 
 .large{

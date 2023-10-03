@@ -16,6 +16,3 @@
 
 
 
-## Todo
-
-- Think on how the GEE Demos can be presented in a way that the thought process is visible
