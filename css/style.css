@@ -45,6 +45,11 @@ code{
 }
 
 
+.spaced > li { 
+    margin-bottom: 30px;  
+ }
+
+
 .xx-large{
     font-size: xx-large;
 }
