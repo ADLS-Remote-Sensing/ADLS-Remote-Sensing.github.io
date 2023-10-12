@@ -1,5 +1,16 @@
 
 
+## Notizen 2023
+
+- Javascripts in Websites stösst auf interesse. Erstellen einer eignen Website (Name Reverser) mit Netlify drop kurz demonstrieren (zum mitmachen)
+- Leistungsnachweis 
+  - als eigens Projekt in 2 - 2.5h durchzuführen und präsentieren ist sinnvoll. 
+  - keine gruppen, einzelarbeit ist sinnvoll
+  - max 3 minuten, slides zentral sammeln (kein Umstecken der Laptops)
+  - **die Themen deutlich vereinfachen. Stark anlehnen an die Demos, die studierende variieren dann lediglich den Untersuchungsraum**
+
+
+
 ## Timeline
 
 | Time          | Topic                                                                                           |
