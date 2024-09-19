@@ -525,37 +525,79 @@
 				</section>
 
 				<section>
-					<a href="https://bit.ly/gee-2023" class="r-fit-text">bit.ly/gee-2023</a>
+					Demo 1: Unispectral Data
 				</section>
 
 				<section>
-					Demo 1 (SRTM)
+					<h2 class="r-fit-text">Identifying Suitable Areas for Renewable Energy Installation</h2>
+
+					<ul>
+    					<li>Elevation: 500 - 1000 MASL</li>
+    					<li>Slope: 3 - 6°</li>
+    					<li>Aspect: South facing, between 315° and 45°</li>
+					</ul>
 				</section>
 
 				<section>
-					Demo 2 (Sentinel RBG)
+					Demo 2: Multispectral Data
+
 				</section>
 
 				<section>
-					Demo 3 (Sentinel NDVI)
+					<h2 class="r-fit-text">Electromagnetic Spectrum in Sentinel S2</h2>
+
+					<div style="background-color: white;">
+						<img src="images/sentinel_2_channels.png" alt="" srcset="">
+
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>VIS: Visible light</li>
+							<li>NIR: Near Infrared</li>
+							<li>SIWIR: Short wave IR</li>
+							<li>TIR: Thermal IR</li>
+						</ul>
+					</aside>
+
 				</section>
 
 				<section>
-					Demo 4 (Sentinel NDVI ΔT)
+					<h2 class="r-fit-text">Create a <em>True Color Image</em> from the R-/G-/B-Bands</h2>
+				</section>
+
+
+				<section>
+					Demo 3: Multispectral NDVI
 				</section>
 
 				<section>
-					Demo 5 (Sentinel NDVI ΔT, no clouds)
+					<h2 class="r-fit-text">NDIV: normalized difference vegetation index</h2>
+
+					<img src="images/ndvi_resized-2048x1061.jpg" alt="" srcset="">
+
 				</section>
 
 				<section>
-					Demo 6 (Forest Cover change)
+					$$
+					\begin{aligned}
+					\text{NDVI} &amp; = \frac{\text{NIR}-\text{Red}}{\text{NIR}+\text{Red}}
+					\end{aligned}
+
+
+					$$
+
+				</section>
+
+				<section data-visibility="hidden">
+					Demo 4: NDVI over time (optional)
 				</section>
 
 				<section>
-					Demo 7 (Land use classification)
+					Demo 5: Forest regrowth
 				</section>
 
+				
 
 			</section>
 
@@ -565,24 +607,32 @@
 				</section>
 
 				<section>
-					For the rest of the afternoon:
+					
+					Your task for this afternoon:
 
-					<ol class="xx-large">
-						<li class="fragment">Choose a (simple) research question to work on (ideas on next slide)</li>
-						<li class="fragment">Look for appropriate datasets. If unsuccessful, go to Step 1</li>
-						<li class="fragment">Work on the project in GEE</li>
-						<li class="fragment">Prepare 3 - 5 slides describing:</li>
-						<ul class="fragment">
-							<li>your research question</li>
-							<li>your the relevant datasets</li>
-							<li>your (priliminary) results</li>
-							<li>your challanges and hypothetical path forward</li>
-						</ul>
-						<li class="fragment">Present your slides in 3 minutes at 15.45</li>
+					<ol>
+						<li class="fragment">
+							Reimplement one of the demonstrated analyses to a different area
+							<span class="fragment">(or implement your own idea)</span>
+
+						</li> 
+						
+						<li class="fragment">
+							Download your results (e.g. as a csv) to your local harddrive. 
+						</li>
+						<li class="fragment">
+							Write a brief description of your analysis and your results (use Jupyter, Rmarkdown or Quarto)
+						</li>
+						<li class="fragment">
+							(Optional): Submit via mail to rata@zhaw.ch
+						</li>
+
+						
+						
 					</ol>
 				</section>
 
-				<section>
+				<section data-visibility="hidden">
 					<ol class="xx-large spaced">
 						<li class="fragment"><span class="highlight">Vegetation Analysis:</span> Calculate the Normalized Difference Vegetation Index (NDVI) for a specific area and time frame. Plot a time series graph showing changes in vegetation over time.</li>
 						<li class="fragment"><span class="highlight">Land Cover Change Detection:</span>	Analyze two satellite images from different years and use image differencing to detect changes in land cover (e.g., urban expansion, deforestation) in a selected region.</li>
@@ -592,6 +642,31 @@
 				</section>
 			</section>
 
+			<section>
+				<section class="blur-5px shadow-4px" data-background-image="images/sunflowers-8980921_1280.jpg">
+					<h2>Graded Assignment</h2>
+				</section>
+				<section>
+					<p style="text-align: left;" class="fragment">
+						Apply the expertise and skills you acquire within the two remotesensing 
+						sessions to design and elaborate your own research project. 
+						Make sure to describe the motivation, a suitable analysis approach and 
+						applicable remote sensing data. 
+					</p>
+
+					<p style="text-align: left;" class="fragment">
+						The short research proposal is not to exceed 1 page and can include one 
+						figure.
+					</p>
+
+					<p style="text-align: left;" class="fragment">
+						Deadline is one week after the final session of the remote sensing 
+						input (3.10./17.10.)
+					</p>
+				</section>
+			</section>
+
+
 		</div>
 	</div>
 
@@ -599,6 +674,7 @@
 	<script src="revealjs/plugin/notes/notes.js"></script>
 	<script src="revealjs/plugin/highlight/highlight.js"></script>
 	<script src="verticator/plugin/verticator/verticator.js"></script>
+	<script src="revealjs/plugin/math/math.js"></script>
 	<script>
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/
@@ -607,7 +683,7 @@
 			hash: true,
 
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealHighlight, RevealNotes, Verticator]
+			plugins: [RevealHighlight, RevealNotes, Verticator, RevealMath.KaTeX]
 		});
 	</script>
 </body>
