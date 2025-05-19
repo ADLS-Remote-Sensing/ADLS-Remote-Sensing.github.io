@@ -1,29 +1,7 @@
 
 
-## Notizen 2023
+Urspünglich hatte ich diese Einheit mal für das Datalab konzipiert. Es stellt sich aber heraus, dass die Inhalte für das DataLab zu viel sind. Im Remote Sensing kurs greife ich das Thema also nochmal auf, und beginne als erstes mit einem Recap / refresher, was die ersten beiden Lektionen des ersten Tages füllt. Tag 2 ist noch TBD, auf jeden Fall möchte ich auf Daten Import / Export eingehen, sowie das Zusammenspiel von GEE und QGIS.
 
-- Javascripts in Websites stösst auf interesse. Erstellen einer eignen Website (Name Reverser) mit Netlify drop kurz demonstrieren (zum mitmachen)
-- Leistungsnachweis 
-  - als eigens Projekt in 2 - 2.5h durchzuführen und präsentieren ist sinnvoll. 
-  - keine gruppen, einzelarbeit ist sinnvoll
-  - max 3 minuten, slides zentral sammeln (kein Umstecken der Laptops)
-  - **die Themen deutlich vereinfachen. Stark anlehnen an die Demos, die studierende variieren dann lediglich den Untersuchungsraum**
+Die Demos / Musterlösungen sind immer noch diejenigen des DataLabs:
 
-
-
-## Timeline
-
-| Time          | Topic                                                                                           |
-|---------------|---------------------------------------                                                          |
-| 08:00 - 08:15 | *Why Cloud Based* and *Google Earth Engine*   |
-| 08:15 - 08:35 | *Introduction to JavaScript* ([Demo 1](01-browser-console.md) & [Demo 2](02-basic-html-script.md)) -Recap (?) |
-| ************* | *************  |
-| 08:50 - 09:10 | Demo *Detour Creating a Website* |
-| 09:10 - 09:35 | Task: *Create a website that reverses your name* |
-| ************* | *************  |
-| 09:50 - 10:35 | GEE Demos 0 - 3
-| ************* | *************  |
-| 10:50 - 11:35 | GEE Demos 4 - 6
-
-
-
+https://github.zhaw.ch/pages/ADLS-Digital-Environment/Life-Sciences-Datalab-Praktika-Remote-Sending-GEE-Demos/
